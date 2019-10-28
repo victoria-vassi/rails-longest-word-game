@@ -1,0 +1,11 @@
+<h1>Your score!</h1>
+
+<div class="container">
+  <p> Your attemp was: <%= @score[:attempt] %> </p>
+  <p> You score: <%= @score[:score] %></p>
+  <p> It took you <%= @score[:time] %> seconds.</p>
+  <p> <%= @score[:message] %></p>
+
+
+  <%= link_to "Play again", new_path %>
+</div>
