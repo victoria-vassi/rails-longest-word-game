@@ -2,9 +2,11 @@
   <h1> New Game </h1>
 
   <div class="container">
-  <h3 class = "letters" > <% @letters.each do |letter| %>
-    <%= letter %>
-    <% end %></h3>
+  <h3 class="wrapper">
+    <% @letters.each do |letter| %>
+    <p class = "letters"> <%= letter %> <p>
+    <% end %>
+  </h3>
 
     <p class="ask-submit">What's the longest word you can find?</p>
     <form action="/score" method="post">
